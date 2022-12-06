@@ -1,5 +1,13 @@
 $(document).ready(() => {
     $('.slider .container').height($('.slider').height());
+    if($(window).width() < 961){
+        $('.tarifFull__content').slick({
+            slidesToShow: '1',
+            arrow: true,
+            prevArrow: '.tarifFull__leftArrow',
+            nextArrow: '.tarifFull__rightArrow',
+        })
+    }
     //Выбор города в хедер
     //Октрытие менюшки
     $('.js-select-city').on('click', (e) => {
@@ -69,14 +77,26 @@ $(document).ready(() => {
         autoplay: true,
         autoplaySpeed: 5000,
         slidesToShow: 2,
+        prevArrow: '.reviews__leftArrow',
+        nextArrow: '.reviews__rightArrow',
         responsive: [
             {
               breakpoint: 961,
               settings: {
                 slidesToShow: 1,
+                arrows: true
               }
             }
         ]
+    })
+
+    //Откртыие закрытие  мобильного меню
+    $('.js-open-mobMenu').on('click', function(e){
+        e.preventDefault();
+
+        $(this).toggleClass('active');
+        $('.js-mobMenu').slideToggle();
+        $('body').toggleClass('noScroll');
     })
 })
 
