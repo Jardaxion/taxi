@@ -1366,8 +1366,8 @@ main
 
     border-radius: 12px;
     background: white;
-    -webkit-box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
-            box-shadow: 0 1px 25px rgba(13, 41, 56, .02);
+    -webkit-box-shadow: 0 0 25px rgba(13, 41, 56, .02);
+            box-shadow: 0 0 25px rgba(13, 41, 56, .02);
 }
 
 .question__title
