@@ -99,22 +99,22 @@
           <div class="slider__item">
             <p class="slider__item-title">Подключение водителей к такси</p>
             <p class="slider__item-subtitle">
-               Комиссия не более <span class="slider__item-subtitle--orange">1.5%</span></p><a class="button slider__button" href="#">Подключиться</a>
+               Комиссия не более <span class="slider__item-subtitle--orange">1.5%</span></p><a class="button slider__button js-open-modal" href="#" data-modal="request">Подключиться</a>
           </div>
           <div class="slider__item">
             <p class="slider__item-title">Подключение водителей к такси</p>
             <p class="slider__item-subtitle">
-               Комиссия не более <span class="slider__item-subtitle--orange">1.5%</span></p><a class="button slider__button" href="#">Подключиться</a>
+               Комиссия не более <span class="slider__item-subtitle--orange">1.5%</span></p><a class="button slider__button js-open-modal" href="#" data-modal="request">Подключиться</a>
           </div>
           <div class="slider__item">
             <p class="slider__item-title">Подключение водителей к такси</p>
             <p class="slider__item-subtitle">
-               Комиссия не более <span class="slider__item-subtitle--orange">1.5%</span></p><a class="button slider__button" href="#">Подключиться</a>
+               Комиссия не более <span class="slider__item-subtitle--orange">1.5%</span></p><a class="button slider__button js-open-modal" href="#" data-modal="request">Подключиться</a>
           </div>
           <div class="slider__item">
             <p class="slider__item-title">Подключение водителей к такси</p>
             <p class="slider__item-subtitle">
-               Комиссия не более <span class="slider__item-subtitle--orange">1.5%</span></p><a class="button slider__button" href="#">Подключиться</a>
+               Комиссия не более <span class="slider__item-subtitle--orange">1.5%</span></p><a class="button slider__button js-open-modal" href="#" data-modal="request">Подключиться</a>
           </div>
         </div>
       </div>
@@ -139,37 +139,37 @@
           <div class="tarif__effect"></div>
           <div class="tarif__content">
             <div class="tarif__tarif"><img class="tarif__img img1" src="img/tarif/1.png" alt="">
-              <p class="tarif__tarif-title">Эконом</p><a class="tarif__tarif-button" href="#">Подключится</a>
+              <p class="tarif__tarif-title">Эконом</p><a class="tarif__tarif-button js-open-modal" href="#" data-modal="request">Подключится</a>
             </div>
             <div class="tarif__tarif"><img class="tarif__img img2" src="img/tarif/2.png" alt="">
-              <p class="tarif__tarif-title">Комфрот</p><a class="tarif__tarif-button" href="#">Подключится</a>
+              <p class="tarif__tarif-title">Комфрот</p><a class="tarif__tarif-button js-open-modal" href="#" data-modal="request">Подключится</a>
             </div>
             <div class="tarif__tarif"><img class="tarif__img img3" src="img/tarif/3.png" alt="">
-              <p class="tarif__tarif-title">Бизнес</p><a class="tarif__tarif-button" href="#">Подключится</a>
+              <p class="tarif__tarif-title">Бизнес</p><a class="tarif__tarif-button js-open-modal" href="#" data-modal="request">Подключится</a>
             </div>
             <div class="tarif__tarif"><img class="tarif__img img4" src="img/tarif/4.png" alt="">
-              <p class="tarif__tarif-title">Ультима</p><a class="tarif__tarif-button" href="#">Подключится</a>
+              <p class="tarif__tarif-title">Ультима</p><a class="tarif__tarif-button js-open-modal" href="#" data-modal="request">Подключится</a>
             </div>
             <div class="tarif__tarif"><img class="tarif__img img5" src="img/tarif/5.png" alt="">
-              <p class="tarif__tarif-title">Грузовой</p><a class="tarif__tarif-button" href="#">Подключится</a>
+              <p class="tarif__tarif-title">Грузовой</p><a class="tarif__tarif-button js-open-modal" href="#" data-modal="request">Подключится</a>
             </div>
             <div class="tarif__tarif"><img class="tarif__img img6" src="img/tarif/6.png" alt="">
-              <p class="tarif__tarif-title">Минивен</p><a class="tarif__tarif-button" href="#">Подключится</a>
+              <p class="tarif__tarif-title">Минивен</p><a class="tarif__tarif-button js-open-modal" href="#" data-modal="request">Подключится</a>
             </div>
           </div>
-          <div class="tarif__button-wrp"><a class="button tarif__button" href="#">Нужна консультация</a>
-          </div>
+          <div class="tarif__button-wrp"><a class="tarif__button button js-open-modal" href="#" data-modal="request">Нужна консультация</a></div>
         </div>
       </div>
     </section>
     <section class="tarifFull">
       <div class="container">
         <div class="tarifFull__inner">
-          <p class="title tarifFull__title">Все тарифы</p>
+          <p class="title tarifFull__title">Этапы подключения</p>
+          <div class="tarifFull__circle"></div>
           <div class="tarifFull__content">
             <div class="questions__question">
               <p class="question__title">Заявка</p>
-              <p class="question__description">Оставляете заявку на сайте или звоните нам.</p><a class="button tarifFull__button" href="#">Оставить заявку</a>
+              <p class="question__description">Оставляете заявку на сайте или звоните нам.</p><a class="button tarifFull__button js-open-modal" href="#" data-modal="request">Оставить заявку</a>
               <p class="question__number">1</p>
             </div>
             <div class="questions__question">
@@ -367,6 +367,33 @@
       </div>
     </div>
   </footer>
+  <div class="modal__background"></div>
+  <div class="modal" id="request">
+    <div class="modal__inner">
+      <svg class="modal__exit js-close-modal" width="20" height="19" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.70711" y1="1" x2="19" y2="18.2929" stroke="black" stroke-linecap="round"></line>
+        <line x1="1" y1="18.2929" x2="18.2929" y2="1" stroke="black" stroke-linecap="round"></line>
+      </svg>
+      <p class="modal__title">Оставь заявку</p>
+      <p class="modal__description">В течении дня мы свяжемся с Вами</p>
+      <form class="modal__form" action="">
+        <input class="modal__input" type="text" placeholder="Ф.И.О">
+        <input class="modal__input" type="text" placeholder="+ 7 (000) 000-00-00">
+        <button class="js-reOpen-modal modal__button button" type="submit" data-modal="thanks">Отправить заявку </button>
+      </form>
+      <p class="modal__subdescription">Отправляя заявку вы соглашаетесь с <a href="#">политикой конфиденциальности</a> сайта</p>
+    </div>
+  </div>
+  <div class="modal" id="thanks">
+    <div class="modal__inner center">
+      <svg class="modal__exit js-close-modal" width="20" height="19" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.70711" y1="1" x2="19" y2="18.2929" stroke="black" stroke-linecap="round"></line>
+        <line x1="1" y1="18.2929" x2="18.2929" y2="1" stroke="black" stroke-linecap="round"></line>
+      </svg>
+      <p class="modal__title bigMargin">Спасибо что оставили заявку</p>
+      <button class="js-close-modal modal__button" href="#">На главную </button>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.min.js"></script>

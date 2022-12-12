@@ -169,6 +169,13 @@ table
     border-collapse: collapse;
 }
 
+input
+{
+    border: none;
+    outline: none;
+    background: none;
+}
+
 /* Шрифты */
 @font-face
 {
@@ -299,6 +306,7 @@ main
 {
     position: fixed;
     z-index: 3;
+    z-index: 9;
     top: 0;
     left: 0;
 
@@ -328,18 +336,18 @@ main
 }
 .modal__inner
 {
-    min-width: 300px;
+    min-width: 532px;
     max-width: none;
-    min-height: 50px;
+    min-height: 405px;
     max-height: none;
-    padding: 10px;
+    padding: 47px 76px 33px 81px;
 
     -webkit-transition: .3s all;
          -o-transition: .3s all;
             transition: .3s all;
     pointer-events: none;
 
-    border-radius: 10px;
+    border-radius: 15px;
     background: white;
 }
 .modal__background
@@ -379,6 +387,178 @@ main
 {
     pointer-events: all;
 }
+.modal *
+{
+    margin-bottom: 15px;
+
+    color: black;
+}
+.modal__background
+{
+    z-index: 8;
+}
+.modal__inner
+{
+    position: relative;
+}
+.modal__inner.center
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.modal__title
+{
+    font-size: 24px;
+    font-weight: 500;
+
+    margin-bottom: 12px;
+
+    text-align: center;
+}
+.modal__title.bigMargin
+{
+    margin-bottom: 46px;
+}
+.modal__description
+{
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+.modal__form
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    width: 330px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.modal__form *
+{
+    margin-bottom: 8px;
+}
+.modal__form:last-child
+{
+    margin-bottom: 0;
+}
+.modal__form-title
+{
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+.modal__input
+{
+    padding: 18px 25px;
+
+    color: #767676;
+    border-radius: 7px;
+    background: #f4f4f4;
+}
+.modal__input::-webkit-input-placeholder
+{
+    color: #767676;
+}
+.modal__input::-moz-placeholder
+{
+    color: #767676;
+}
+.modal__input:-ms-input-placeholder
+{
+    color: #767676;
+}
+.modal__input::-ms-input-placeholder
+{
+    color: #767676;
+}
+.modal__input::placeholder
+{
+    color: #767676;
+}
+.modal__input,
+.modal__textarea,
+.modal__button
+{
+    width: 100%;
+}
+.modal__textarea
+{
+    height: 92px;
+    max-height: 200px;
+
+    resize: vertical;
+}
+.modal__button
+{
+    font-size: 18px;
+    font-weight: 700;
+
+    padding: 17px 45px;
+}
+.modal__subdescription
+{
+    font-size: 14px;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: black;
+}
+.modal a
+{
+    position: relative;
+
+    text-decoration: underline;
+
+    color: #9f9f9f;
+}
+.modal__exit
+{
+    position: absolute;
+    top: 22px;
+    right: 22px;
+
+    cursor: pointer;
+}
+.modal__button
+{
+    padding: 17px 0;
+
+    cursor: pointer;
+    -webkit-transition: .3s '' all;
+         -o-transition: .3s '' all;
+            transition: .3s '' all;
+
+    color: white;
+    border-radius: 8px;
+    background: #232227;
+}
+.modal__button:hover
+{
+    background: #45444c;
+}
 
 /* Кнопка */
 .button
@@ -397,6 +577,60 @@ main
 .button:hover
 {
     background: #886d28;
+}
+
+/* Input */
+.input
+{
+    font-size: 13px;
+    line-height: 12px;
+
+    width: 100%;
+    padding: 21px 24px;
+
+    color: #262626;
+    border-radius: 4px;
+    background: white;
+}
+.input::-webkit-input-placeholder
+{
+    font-family: 'GothamPro';
+    font-size: 13px;
+    line-height: 12px;
+
+    color: #262626;
+}
+.input::-moz-placeholder
+{
+    font-family: 'GothamPro';
+    font-size: 13px;
+    line-height: 12px;
+
+    color: #262626;
+}
+.input:-ms-input-placeholder
+{
+    font-family: 'GothamPro';
+    font-size: 13px;
+    line-height: 12px;
+
+    color: #262626;
+}
+.input::-ms-input-placeholder
+{
+    font-family: 'GothamPro';
+    font-size: 13px;
+    line-height: 12px;
+
+    color: #262626;
+}
+.input::placeholder
+{
+    font-family: 'GothamPro';
+    font-size: 13px;
+    line-height: 12px;
+
+    color: #262626;
 }
 
 /* Анимации */
@@ -1059,6 +1293,8 @@ main
 /* Тарифы 2 */
 .tarifFull
 {
+    position: relative;
+
     padding: 139px 0 73px;
 }
 .tarifFull *
@@ -1104,6 +1340,21 @@ main
 .tarifFull__leftArrow
 {
     margin-right: 12px;
+}
+.tarifFull__circle
+{
+    position: absolute;
+    top: 125px;
+    right: 40px;
+
+    width: 547px;
+    height: 547px;
+
+    border-radius: 50%;
+    background: rgba(38, 32, 32, .08);
+
+    -webkit-filter: blur(199.5px);
+            filter: blur(199.5px);
 }
 
 .questions__question
@@ -1514,6 +1765,20 @@ main
         font-size: 32px;
         line-height: 40px;
     }
+    .modal__inner
+    {
+        min-width: auto;
+        max-width: 450px;
+        min-height: auto;
+    }
+    .modal__form
+    {
+        width: auto;
+    }
+    .modal__subdescription
+    {
+        width: auto;
+    }
     .header__bottom
     {
         display: none;
@@ -1587,10 +1852,6 @@ main
         grid-template-columns: repeat(1, 100%);
         gap: 120px;
     }
-    .tarifFull
-    {
-        background: #dbdbdb;
-    }
     .tarifFull__buttons
     {
         display: -webkit-box;
@@ -1600,6 +1861,23 @@ main
     .tarifFull__content
     {
         display: block;
+    }
+    .tarifFull__circle
+    {
+        top: auto;
+        bottom: 0;
+        left: auto;
+        left: 0;
+        left: 50%;
+
+        width: 250px;
+        height: 250px;
+
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+
+        border-radius: 50%;
     }
     .whyUs__content
     {
@@ -1673,6 +1951,18 @@ main
         text-align: center;
     }
 }
+@media (max-width: 510px)
+{
+    .modal
+    {
+        padding: 0 20px;
+    }
+    .modal__inner
+    {
+        width: 100%;
+        max-width: none;
+    }
+}
 @media (max-width: 550px)
 {
     .header__box-link
@@ -1698,6 +1988,13 @@ main
     .tarif__effect
     {
         width: 202px;
+    }
+}
+@media (max-width: 400px)
+{
+    .modal__inner
+    {
+        padding: 47px 30px 33px 30px;
     }
 }
 

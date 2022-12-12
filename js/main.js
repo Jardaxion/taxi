@@ -98,6 +98,42 @@ $(document).ready(() => {
         $('.js-mobMenu').slideToggle();
         $('body').toggleClass('noScroll');
     })
+
+    //Модальные окна
+    //Открытие
+    $('.js-open-modal').on('click', function(e){
+        e.preventDefault();
+
+        if($('.js-open-desktop-menu').hasClass('reverse')){
+            openCloseMenu();
+        }
+
+        if($('.js-open-mobile-menu').hasClass('reverse')){
+            openCloseMobMenu();
+        }
+
+        openModal($(this).data('modal'));
+    })
+    //Закрытие
+    $('.js-close-modal').on('click', function(e){
+        e.preventDefault();
+
+        closeModal();
+    })
+    $('.modal').on('click', function(e){
+        e.preventDefault();
+
+        if(e.target === document.querySelector('.modal')){
+            closeModal();
+        }
+
+    })
+    //Переоткрытие
+    $('.js-reOpen-modal').on('click', function(e){
+        e.preventDefault();
+
+        reOpenModal($(this).data('modal'));
+    })
 })
 
 //Функции
@@ -110,4 +146,25 @@ function openCloseSelect(){
     setTimeout(() => {
         $('.js-select-city').removeClass('time');
     }, 500);
+}
+
+//Модальные окна
+//Открытие
+function openModal(id){
+    $('.modal#'+id).addClass('active');
+    $('.modal__background').addClass('active');
+    $('body').addClass('noScroll');
+}
+
+//Закрытие
+function closeModal() {
+    $('.modal.active').removeClass('active');
+    $('.modal__background').removeClass('active');
+    $('body').removeClass('noScroll');
+}
+
+//Закрытие одного модального окна и открытие другого
+function reOpenModal(id) {
+    $('.modal.active').removeClass('active');
+    $('.modal#'+id).addClass('active');
 }

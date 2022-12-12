@@ -129,6 +129,33 @@
       </div>
     </div>
   </footer>
+  <div class="modal__background"></div>
+  <div class="modal" id="request">
+    <div class="modal__inner">
+      <svg class="modal__exit js-close-modal" width="20" height="19" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.70711" y1="1" x2="19" y2="18.2929" stroke="black" stroke-linecap="round"></line>
+        <line x1="1" y1="18.2929" x2="18.2929" y2="1" stroke="black" stroke-linecap="round"></line>
+      </svg>
+      <p class="modal__title">Оставь заявку</p>
+      <p class="modal__description">В течении дня мы свяжемся с Вами</p>
+      <form class="modal__form" action="">
+        <input class="modal__input" type="text" placeholder="Ф.И.О">
+        <input class="modal__input" type="text" placeholder="+ 7 (000) 000-00-00">
+        <button class="js-reOpen-modal modal__button button" type="submit" data-modal="thanks">Отправить заявку </button>
+      </form>
+      <p class="modal__subdescription">Отправляя заявку вы соглашаетесь с <a href="#">политикой конфиденциальности</a> сайта</p>
+    </div>
+  </div>
+  <div class="modal" id="thanks">
+    <div class="modal__inner center">
+      <svg class="modal__exit js-close-modal" width="20" height="19" viewbox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="1.70711" y1="1" x2="19" y2="18.2929" stroke="black" stroke-linecap="round"></line>
+        <line x1="1" y1="18.2929" x2="18.2929" y2="1" stroke="black" stroke-linecap="round"></line>
+      </svg>
+      <p class="modal__title bigMargin">Спасибо что оставили заявку</p>
+      <button class="js-close-modal modal__button" href="#">На главную </button>
+    </div>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.min.js"></script>
